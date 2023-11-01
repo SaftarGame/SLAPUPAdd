@@ -5,10 +5,79 @@
     android:layout_height="match_parent"
     tools:context=".MenuBookFragment">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="334dp"
-        android:layout_height="wrap_content"
-        android:text="Меню"
-        android:textSize="34sp" />
+        <TextView
+            android:id="@+id/textViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/title"
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/textViewBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="@string/menu_bonus"
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/main"/>
+
+        <HorizontalScrollView
+            android:id="@+id/scrollViewHorizont"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="70dp"
+            android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutScrollHor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/button"
+                            android:textColor="@color/text"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_set"
+                            android:textSize="20sp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/button"
+                            android:textColor="@color/text"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_rol"
+                            android:textSize="20sp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/button"
+                            android:textColor="@color/text"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_sush"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/button"
+                            android:textColor="@color/text"
+                            android:layout_gravity="center"
+                            android:text="@string/txt_napit"
+                            android:textSize="20sp" />
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+
 </FrameLayout>
